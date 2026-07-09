@@ -115,6 +115,12 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Built on Microsoft Presidio with NIST/DHS categorizations and risk scoring
 - [GitHub](https://github.com/EdyVision/pii-codex)
 
+**PrivacyScrubber**
+- 100% client-side, zero-trust PII sanitizer for AI workflows that strips names, emails, phones, and IDs locally in the browser.
+- Processes files (PDFs, DOCX, text) entirely in local RAM using offline OCR and Mammoth.js with zero server uploads.
+- Available as a web app and a [Chrome Extension](https://chromewebstore.google.com/detail/privacyscrubber-%E2%80%94-pii-red/pimoejgefeilajmmbpghifdmhdlkgjol) for in-context sanitization directly inside LLM chat interfaces.
+- [Website](https://privacyscrubber.com)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
