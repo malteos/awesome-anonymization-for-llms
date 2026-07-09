@@ -113,6 +113,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 **PII Codex**
 - Research-focused package for PII detection, categorization, and severity assessment
 - Built on Microsoft Presidio with NIST/DHS categorizations and risk scoring
+
+**DarkMoon Privacy Gateway**
+- Self-hosted proxy that tokenizes sensitive values (IPs, hostnames, credentials, PII) into deterministic, reversible placeholders before prompts reach the LLM
+- The model never sees real data; placeholders are restored in the response, backed by an anti-exfiltration command gateway (open-source, GPL-3.0)
+- [GitHub](https://github.com/ASCIT31/Dark-Moon)
 - [GitHub](https://github.com/EdyVision/pii-codex)
 
 ### Privacy-Preserving ML Frameworks
