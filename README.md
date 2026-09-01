@@ -120,6 +120,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Built on Microsoft Presidio with NIST/DHS categorizations and risk scoring
 - [GitHub](https://github.com/EdyVision/pii-codex)
 
+**piighost**
+- Anonymizes the personal data in a prompt before it reaches a hosted LLM (GPT, Claude, Gemini) and restores it in the reply, transparently for the user: `Write to John (john.doe@example.com)` becomes `Write to <<PERSON:1>> (<<EMAIL:1>>)`, with tokens stable across a conversation and tool calls
+- Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
+- [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
