@@ -100,6 +100,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Context-aware detection using spaCy, 50+ predefined entity types, multi-language support
 - [GitHub](https://github.com/microsoft/presidio) | [Documentation](https://microsoft.github.io/presidio/)
 
+**Kiji Privacy Proxy**
+- Privacy proxy (MacOS/Linux/Chrome extension) that detects, masks, and reverts PII locally using ONNX before forwarding requests to closed source models like OpenAI/Anthropic.
+- Entity stack is OSS and Apache 2.0 (dataset, model pipeline, application). Backed by Dataiku.
+- [GitHub](https://github.com/dataiku/kiji-proxy) | [Documentation](https://github.com/dataiku/kiji-proxy/tree/main/docs)
+
 **DataFog Python**
 - Lightning-fast PII detection with 190x performance advantage (2.4ms for 10KB text)
 - Multiple engines: Regex, spaCy, GLiNER with smart cascading
