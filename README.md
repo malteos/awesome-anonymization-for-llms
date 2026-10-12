@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**MASCHERA**
+- Desktop app and Docker service that pseudonymizes Swiss documents (German, French, Italian, English) locally before they are pasted into a hosted LLM, and restores the real values in the reply
+- Three stages: checksums for Swiss identifiers (AHV, UID, IBAN, QR reference), anchored patterns, and a fine-tuned ModernBERT model (45 entity types, trained on synthetic data only); runs on CPU
+- [GitHub](https://github.com/semprerudi/maschera) | [Website](https://www.maschera.ch/) | [Model](https://huggingface.co/semprerudi/maschera-ch-v63b)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
