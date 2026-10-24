@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**AgentRedactor**
+- Local privacy proxy for AI coding agents that redacts PII and secrets before requests reach LLM providers and restores values in responses
+- On-device ONNX NER plus custom regex and keyword rules; MIT-licensed Windows/Linux applications and CLI
+- [GitHub](https://github.com/Negative-Star-Innovators/AgentRedactor) | [Documentation](https://agentredactor.negativestarinnovators.com/)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
