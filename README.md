@@ -45,6 +45,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Introduces adversarial anonymization framework with privacy-utility trade-offs
 - [arXiv Paper](https://arxiv.org/abs/2402.13846)
 
+**PGPO: Prototype-Guided Progressive Obfuscation for Privacy-Preserving LLM-Enhanced Recommendation** (2026)
+- Protects item-side text in LLM-enhanced recommender systems through prototype-guided, vocabulary-level semantic obfuscation
+- Evaluates privacy against embedding inversion and white-box source re-identification while preserving downstream recommendation utility
+- [Paper](https://aclanthology.org/2026.emnlp-main.480/) | [Code](https://github.com/Shengxiang-Lin/PGPO) | [Project Page](https://shengxiang-lin.github.io/PGPO/)
+
 ### Differential Privacy for LLMs
 
 **Fine-tuning LLMs with user-level differential privacy** (2024)
