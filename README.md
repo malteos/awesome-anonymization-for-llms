@@ -110,6 +110,10 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Multiple engines: Regex, spaCy, GLiNER with smart cascading
 - [GitHub](https://github.com/DataFog/datafog-python)
 
+**decima-pii**
+- Small (140M, int8 ONNX, 148 MB) PII tagger for Arabic, Persian, Urdu, Turkish and English that runs offline on a CPU or in the browser; names, phones, e-mails, national IDs, IBANs, cards, passports, addresses, birth dates, IPs, including Arabic-Indic and Persian digits
+- [Hugging Face](https://huggingface.co/amyrmahdy/decima-pii) | [Browser demo](https://amyrmahdy-decima-playground.static.hf.space/pii.html)
+
 **PII Masker (HydroXai)**
 - Advanced AI-powered detection using fine-tuned DeBERTa-v3 with 1024 token support
 - High-precision detection with ~4% performance improvement over base models
