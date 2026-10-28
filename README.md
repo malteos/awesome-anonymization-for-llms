@@ -125,6 +125,10 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**Sosia**
+- Reversible pseudonymization of prompts and documents sent to hosted LLMs: personal data is replaced with realistic surrogates of the same kind (checksum-valid Italian codice fiscale, IBAN and partita IVA; US SSN, UK NHS numbers), dates are shifted by whole weeks, and the originals are restored in the reply, streaming included
+- Local proxy for the Anthropic and OpenAI APIs (messages, chat completions, responses, tool calls); DOCX, XLSX, PDF text and email; Italian and English; rules plus optional GLiNER; CPU only; Apache 2.0
+- [GitHub](https://github.com/andreagentili96-code/sosia)
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
