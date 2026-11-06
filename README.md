@@ -45,6 +45,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Introduces adversarial anonymization framework with privacy-utility trade-offs
 - [arXiv Paper](https://arxiv.org/abs/2402.13846)
 
+**Unraveling Interwoven Roles of Large Language Models in Authorship Privacy: Obfuscation, Mimicking, and Verification** (2025)
+- Studies LLM-enabled authorship obfuscation, mimicking, and verification in one unified framework
+- Measures how the three tasks interact on human-authored text, at one point in time and iteratively, and how demographic metadata affects privacy risk
+- [Paper (EMNLP 2025)](https://aclanthology.org/2025.emnlp-main.753/) · [Code](https://github.com/nguyentuc/authorship_privacy)
+
 ### Differential Privacy for LLMs
 
 **Fine-tuning LLMs with user-level differential privacy** (2024)
