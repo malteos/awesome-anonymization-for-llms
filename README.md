@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**Seter / seter-guard**
+- Open MIT PII models for Hebrew, Arabic and English, including standalone first names that English-first filters often miss. A FastAPI service (seter-guard) plugs into LiteLLM as a Generic Guardrail API and masks prompts before they reach a hosted LLM.
+- In-browser ONNX demo; text stays on the device. A redaction aid, not a compliance certificate.
+- [GitHub](https://github.com/Shoresh-Labs/seter-guard) | [Model](https://huggingface.co/shoresh-labs/seter-pii-he-ar) | [Demo](https://huggingface.co/spaces/yinonov/seter-demo)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
@@ -187,6 +192,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Lightweight multilingual PII detection covering 29 classes across 7 languages
 - Built on Qwen2-0.5B for low latency with long document support
 - [HuggingFace Model](https://huggingface.co/betterdataai/PII_DETECTION_MODEL)
+
+**shoresh-labs/seter-pii-he-ar**
+- MIT-licensed token-classification model (v1.1) for PII in Hebrew, Arabic and English, including mixed text and standalone first names
+- Lenient char-F1 0.904 / 0.917 / 0.878 (HE / AR / EN). On a synthetic set of standalone Hebrew first names, recall was 88%, versus 33% for GLiNER and 14% for openai/privacy-filter
+- [HuggingFace Model](https://huggingface.co/shoresh-labs/seter-pii-he-ar) | [Demo](https://huggingface.co/spaces/yinonov/seter-demo)
 
 ### Datasets
 
