@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**RAGbase Shield**
+- Local, reversible pseudonymization of client folders for lawyers who use Claude: names, addresses, companies, e-mails, IBANs and case numbers become stable codes (`PERSONNE_A`, `IBAN_1`) before the model reads the documents, and real names come back only on the user's computer in the final document
+- Keeps dates, amounts, courts and statute references readable; local MCP server and Claude desktop app plugin (Mac, Windows); encrypted code table per folder; French benchmark results against Presidio; Apache-2.0
+- [GitHub](https://github.com/ragbase/ragbase-shield)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
