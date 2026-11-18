@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**PrivacyScrubber**
+- 100% client-side, zero-trust PII & secret sanitizer (ZTDS) for AI workflows operating strictly in volatile local memory with deterministic surrogate tokenization and local reversal.
+- Processes text and documents (PDF, DOCX, XLSX, OCR) entirely in client RAM with zero server uploads, plus headless Node.js/WASM (`@privacyscrubber/sdk`) and stdio MCP server (`@privacyscrubber/mcp-server`).
+- [Website](https://privacyscrubber.com/) | [Chrome Extension](https://chromewebstore.google.com/detail/privacyscrubber-%E2%80%94-zero-tr/pimoejgefeilajmmbpghifdmhdlkgjol) | [MCP GitHub](https://github.com/moxno/privacyscrubber-mcp)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
