@@ -100,6 +100,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Context-aware detection using spaCy, 50+ predefined entity types, multi-language support
 - [GitHub](https://github.com/microsoft/presidio) | [Documentation](https://microsoft.github.io/presidio/)
 
+**Kiji Privacy Proxy**
+- Privacy proxy (MacOS/Linux/Chrome extension) that detects, masks, and reverts PII locally using ONNX before forwarding requests to closed source models like OpenAI/Anthropic.
+- Entity stack is OSS and Apache 2.0 (dataset, model pipeline, application). Backed by Dataiku.
+- [GitHub](https://github.com/dataiku/kiji-proxy) | [Documentation](https://github.com/dataiku/kiji-proxy/tree/main/docs)
+
 **DataFog Python**
 - Lightning-fast PII detection with 190x performance advantage (2.4ms for 10KB text)
 - Multiple engines: Regex, spaCy, GLiNER with smart cascading
@@ -115,11 +120,15 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Built on Microsoft Presidio with NIST/DHS categorizations and risk scoring
 - [GitHub](https://github.com/EdyVision/pii-codex)
 
+**piighost**
+- Anonymizes the personal data in a prompt before it reaches a hosted LLM (GPT, Claude, Gemini) and restores it in the reply, transparently for the user: `Write to John (john.doe@example.com)` becomes `Write to <<PERSON:1>> (<<EMAIL:1>>)`, with tokens stable across a conversation and tool calls
+- Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
+- [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
+
 **PrivacyScrubber**
-- 100% client-side, zero-trust PII sanitizer for AI workflows that strips names, emails, phones, and IDs locally in the browser.
-- Processes files (PDFs, DOCX, text) entirely in local RAM using offline OCR and Mammoth.js with zero server uploads.
-- Available as a web app and a [Chrome Extension](https://chromewebstore.google.com/detail/privacyscrubber-%E2%80%94-pii-red/pimoejgefeilajmmbpghifdmhdlkgjol) for in-context sanitization directly inside LLM chat interfaces.
-- [Website](https://privacyscrubber.com)
+- 100% client-side, zero-trust PII & secret sanitizer (ZTDS) for AI workflows operating strictly in volatile local memory with deterministic surrogate tokenization and local reversal.
+- Processes text and documents (PDF, DOCX, XLSX, OCR) entirely in client RAM with zero server uploads, plus headless Node.js/WASM (`@privacyscrubber/sdk`) and stdio MCP server (`@privacyscrubber/mcp-server`).
+- [Website](https://privacyscrubber.com/) | [Chrome Extension](https://chromewebstore.google.com/detail/privacyscrubber-%E2%80%94-zero-tr/pimoejgefeilajmmbpghifdmhdlkgjol) | [MCP GitHub](https://github.com/moxno/privacyscrubber-mcp)
 
 ### Privacy-Preserving ML Frameworks
 
