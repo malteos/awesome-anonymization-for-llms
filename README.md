@@ -188,6 +188,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Built on Qwen2-0.5B for low latency with long document support
 - [HuggingFace Model](https://huggingface.co/betterdataai/PII_DETECTION_MODEL)
 
+**syntriq/tarn-german-pii-base**
+- German PII detection with 19 Presidio entity types, including German identifiers (tax ID, health insurance, ID card, passport, driving licence numbers)
+- Base and large token classifiers plus a GLiNER variant, ONNX int8 export and an in-browser demo, Apache-2.0
+- [HuggingFace Model](https://huggingface.co/syntriq/tarn-german-pii-base) · [GitHub](https://github.com/Syntriq-GmbH/tarn)
+
 ### Datasets
 
 **Text Anonymization Benchmark (TAB)**
@@ -204,6 +209,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Large conversation dataset with PII detection and anonymization features
 - Includes redaction indicators and anonymized content for conversational AI training
 - [HuggingFace Dataset](https://huggingface.co/datasets/allenai/WildChat-4.8M)
+
+**syntriq/german-pii-benchmark**
+- 687 synthetic German documents of 26 types with 8,035 labelled spans in 19 Presidio entity types
+- For comparing PII detectors and Presidio configurations on German text
+- [HuggingFace Dataset](https://huggingface.co/datasets/syntriq/german-pii-benchmark)
 
 ### Demo Applications
 
