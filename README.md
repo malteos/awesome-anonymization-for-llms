@@ -126,7 +126,7 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
 **RAGbase Shield**
-- Local, reversible pseudonymization of client folders for lawyers who use Claude: names, addresses, companies, e-mails, IBANs and case numbers become stable codes (`PERSONNE_A`, `IBAN_1`) before the model reads the documents, and real names come back only on the user's computer in the final document
+- Local, reversible pseudonymization of client folders for lawyers who use Claude: names, addresses, companies, e-mails, bank details and case numbers become stable codes (`PERSONNE_A`, `SOCIETE_A`) before the model reads the documents, and real names come back only on the user's computer in the final document
 - Keeps dates, amounts, courts and statute references readable; local MCP server and Claude desktop app plugin (Mac, Windows); encrypted code table per folder; French benchmark results against Presidio; Apache-2.0
 - [GitHub](https://github.com/ragbase/ragbase-shield)
 
