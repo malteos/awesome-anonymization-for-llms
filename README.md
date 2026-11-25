@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**complydoc**
+- Masks personal and financial identifiers (IBANs, tax numbers, emails, phones, optionally names) in PDFs, Word files, spreadsheets and scans before they reach an LLM or RAG pipeline
+- Also strips hidden text such as white-on-white prompt injections; runs locally, with an MCP server for assistants
+- [GitHub](https://github.com/complydoc/complydoc) | [Documentation](https://complydoc.io/docs/)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
