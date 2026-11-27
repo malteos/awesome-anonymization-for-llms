@@ -125,6 +125,11 @@ A comprehensive collection of resources for PII detection, anonymization, privac
 - Pluggable detectors (regex, GLiNER2, spaCy, Transformers, Presidio, LLM); connectors for LangChain, Pydantic AI and LlamaIndex, plus a dockerized OpenAI-compatible proxy (just change the base_url); reversible pseudonymization (GDPR) with optional AES-GCM encrypted Redis memory; MIT
 - [GitHub](https://github.com/Athroniaeth/piighost) | [Documentation](https://athroniaeth.github.io/piighost/) | [Demo](https://piighost-chat.athroniaeth.cloud/)
 
+**pii-roundtrip**
+- Replaces names, IDs and other PII in Russian and UK English documents with placeholders such as `[PERSON_1]` before the text is sent to an external LLM, and restores the original values in the reply; the mapping is kept in an encrypted local vault
+- CLI, Python API and offline desktop app (macOS, Windows beta); includes a reproducible benchmark of Presidio, GLiNER, OpenAI privacy-filter and other tools on a held-out set with confidence intervals; Apache-2.0
+- [GitHub](https://github.com/beskvladimir-create/pii-roundtrip) | [Documentation](https://pii-roundtrip.besk.tech) | [arXiv Paper](https://arxiv.org/abs/2610.34012)
+
 ### Privacy-Preserving ML Frameworks
 
 **PySyft**
